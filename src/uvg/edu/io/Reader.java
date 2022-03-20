@@ -55,7 +55,7 @@ public class Reader {
     }
     
     private String hashFunction(String name, String producto) {	
-    	String key = name + " - " + producto;
+    	String key = name + "- " + producto;
     	return key;
     }
 	

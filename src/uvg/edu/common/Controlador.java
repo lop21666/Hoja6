@@ -37,6 +37,7 @@ public class Controlador {
     		sc.nextLine();
     		System.out.println("Ingrese la cantidad de unidades\n");
     		int cantidad = sc.nextInt();
+    		sc.nextLine();
     		
     		Producto producto = new Producto(cantidad, categorias.get(opc-1), prod);
     		System.out.println("Producto ingresado con exito!\n");
@@ -61,13 +62,11 @@ public class Controlador {
     	int validacion = 0;
     	String categoriaEncontrada = "";
     	for (String i : productos) {
+    		System.out.println(i);
     		String split[] = i.split(" - ");
     		if(split[1] == articulo) {
-    			System.out.println(split[1]);
-    			System.out.println(articulo);
     			validacion = 1;
     			categoriaEncontrada = split[0];
-    			break;
     		}
      	}
     	

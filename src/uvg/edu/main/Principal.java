@@ -115,6 +115,40 @@ public class Principal {
                  	}
 
                  	break;
+                 case 4:
+
+                  	Iterator it = inventario.entrySet().iterator();
+                  	while(it.hasNext()) {
+                  		Map.Entry pair = (Map.Entry) it.next();
+                  		System.out.println(pair.getKey() + " = " + pair.getValue());
+                  	}
+
+                  	break;
+                 case 5:
+
+                  	Iterator it = inventario.entrySet().iterator();
+                  	while(it.hasNext()) {
+                  		Map.Entry pair = (Map.Entry) it.next();
+                  		System.out.println(pair.getKey() + " = " + pair.getValue());
+                  	}
+
+                  	break;
+                 case 6:
+
+                  	Iterator it = inventario.entrySet().iterator();
+                  	while(it.hasNext()) {
+                  		Map.Entry pair = (Map.Entry) it.next();
+                  		System.out.println(pair.getKey() + " = " + pair.getValue());
+                  	}
+
+                  	break;
+                 case 7:
+
+                	salir = true;
+                	salir2 = true;
+	                System.out.println("Ejecucion finalizada");
+
+                  	break;
                  default:
              		System.out.println("Opcion incorrecta. Intentelo de nuevo.");
              		break;
