@@ -1,10 +1,12 @@
 package uvg.edu.io;
-
+import java.util.Random;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.util.Map;
+
 import uvg.edu.common.MapInstanceCreator;
+import uvg.edu.common.Producto;
 
 public class Reader {
 
@@ -24,13 +26,16 @@ public class Reader {
 
             MapInstanceCreator mapFactory = new MapInstanceCreator();
             Map map = mapFactory.getInstance(typeMap);
+            Random random = new Random();
             
             // Lectura del fichero
             String linea;
             while((linea=br.readLine())!=null){
             	
             	String x[] = linea.split("\\|\t");
-                map.put(x[0], x[1]);
+            	
+            	Producto producto = new Producto(random.nextInt(10 + 1) + 1, x[0], x[1]);
+                map.put(hashFunction(x[0],x[1]), producto);
                 
             }
             return map;
@@ -47,6 +52,11 @@ public class Reader {
             }
         }
         return null;
+    }
+    
+    private String hashFunction(String name, String producto) {	
+    	String key = name + " - " + producto;
+    	return key;
     }
 	
 }
