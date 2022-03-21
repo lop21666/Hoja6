@@ -108,38 +108,22 @@ public class Principal {
                  	break;
                  case 3:
 
-                 	Iterator it = inventario.entrySet().iterator();
-                 	while(it.hasNext()) {
-                 		Map.Entry pair = (Map.Entry) it.next();
-                 		System.out.println(pair.getKey() + " = " + pair.getValue());
-                 	}
+                	 controlador.listar(inventario);
 
                  	break;
                  case 4:
 
-                  	Iterator it = inventario.entrySet().iterator();
-                  	while(it.hasNext()) {
-                  		Map.Entry pair = (Map.Entry) it.next();
-                  		System.out.println(pair.getKey() + " = " + pair.getValue());
-                  	}
+                	 controlador.listar(inventario);
 
                   	break;
                  case 5:
 
-                  	Iterator it = inventario.entrySet().iterator();
-                  	while(it.hasNext()) {
-                  		Map.Entry pair = (Map.Entry) it.next();
-                  		System.out.println(pair.getKey() + " = " + pair.getValue());
-                  	}
+                	 controlador.listar(inventario);
 
                   	break;
                  case 6:
 
-                  	Iterator it = inventario.entrySet().iterator();
-                  	while(it.hasNext()) {
-                  		Map.Entry pair = (Map.Entry) it.next();
-                  		System.out.println(pair.getKey() + " = " + pair.getValue());
-                  	}
+                	 controlador.listar(inventario);
 
                   	break;
                  case 7:
